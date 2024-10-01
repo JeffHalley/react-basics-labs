@@ -21,10 +21,10 @@ div {
 }
 
 .container {
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.7); 
-  border-radius: 10px;
+  border-radius: 25px;
   color: white;
+  text-align: center;
 }
 /* Card design */
 .card {
@@ -56,15 +56,6 @@ div {
   margin-bottom: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  .card {
-    width: 100%;
-    height: auto;
-    margin: 15px 0;
-  }
-}
-
 button {
   border: none;
   border-radius: 3px;
@@ -87,4 +78,37 @@ button {
   bottom: 5px;
   right: 5px;
   color: red;
+}
+input[type=text], input[type=date] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 105px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 105px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  transform: translateY(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+form {
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
