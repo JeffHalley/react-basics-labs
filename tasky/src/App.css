@@ -1,36 +1,82 @@
+/* Styling for h1 */
 h1 {
   text-align: center;
-  background-color: grey;
-  color: white;
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
 }
 
+h1:hover {
+  background: linear-gradient(135deg, #283e51, #4b79a1);
+}
+
+/* General container padding */
 div {
   padding: 20px;
 }
 
-.container{
-  text-align: center;
+/* Background wrapper that holds the image */
+.background-wrapper {
+  background-image: url('C:\Users\jeffh\OneDrive - South East Technological University (Waterford Campus)\year 3\sem1\web app dev\react-basics-labs\tasky\public\backgroundReact.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Centers the content */
+  justify-content: center;
+  align-items: center;
 }
 
+/* Container for content */
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: Transparent dark background for content readability */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Card design */
 .card {
   display: inline-block;
   vertical-align: top;
-  font-family: system-ui;
-  background: #5bb4c4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #5bb4c4, #4a9bb3);
   color: white;
   text-align: center;
   width: 180px;
   height: 240px;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Title styling */
 .title {
   font-weight: bold;
-  font-size: 1.2em; 
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
 }
