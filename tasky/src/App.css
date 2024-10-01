@@ -20,33 +20,17 @@ div {
   padding: 20px;
 }
 
-/* Background wrapper that holds the image */
-.background-wrapper {
-  background-image: url('C:\Users\jeffh\OneDrive - South East Technological University (Waterford Campus)\year 3\sem1\web app dev\react-basics-labs\tasky\public\backgroundReact.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh; /* Full viewport height */
-  display: flex; /* Centers the content */
-  justify-content: center;
-  align-items: center;
-}
-
-/* Container for content */
 .container {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7); /* Optional: Transparent dark background for content readability */
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); 
   border-radius: 10px;
   color: white;
 }
-
 /* Card design */
 .card {
   display: inline-block;
   vertical-align: top;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #5bb4c4, #4a9bb3);
   color: white;
   text-align: center;
   width: 180px;
@@ -79,4 +63,21 @@ div {
     height: auto;
     margin: 15px 0;
   }
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 4px 6px;
+  width: 50px;
+  height: 25px;
+}
+
+.doneButton {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: green;
 }
