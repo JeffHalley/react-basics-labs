@@ -112,3 +112,23 @@ form {
   width: 100%;
   margin: auto;
 }
+
+.prioritySelect{
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 105px;
+  box-sizing: border-box;
+}
+.prioritySelect:focus {
+  font-weight: bold;
+  background-color: #007bff;
+  border-color: #007bff;   /* Change border color on focus */
+  outline: none;           /* Remove default outline */
+}
+
+.prioritySelect option {
+  padding: 10px;           /* Add padding to the dropdown options */
+}
